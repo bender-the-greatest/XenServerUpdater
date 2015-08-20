@@ -1,0 +1,16 @@
+Release Notes
+
+v1.0 - Initial version, designed to work with tools provided by XenServer 6.2.
+
+v1.1 - Significant changes
+		- Added XenCenter icon
+		- If the application crashes, the error is logged to a file and the user is notified.
+		  If the log fails to write, we also notify the user in this case as well.
+		- Proper error handling when we fail to log an error (won't crash if we fail to write the log)
+		- Fixed Tab Order
+		- Added tool version to the window title
+		- Don't create console window when calling xe.exe (we redirect the output anyways)
+		- If anything is written to StandardError, display it in the output
+		- Minor change to instructions
+		- Console Output uses fixed-width font (Font.GenericMonospace)
+		
